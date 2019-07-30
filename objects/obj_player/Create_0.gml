@@ -1,7 +1,9 @@
 hspeed_ = 0;
 max_hspeed_ = 3;
 vspeed_ = 0;
-gravity_ = 0.7;
-acceleration_ = 2;
+gravity_ = 1;
+acceleration_ = 1;
 friction_ = .6;
-jump_height_ = -10;
+jump_speed_ = -7.4;
+jump_time_ = 0;
+jump_max_time_ = 20;

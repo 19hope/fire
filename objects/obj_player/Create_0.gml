@@ -7,3 +7,4 @@ friction_ = .6;
 jump_speed_ = -7.4;
 jump_time_ = 0;
 jump_max_time_ = 20;
+key_jump_prev_frame_state_ = 0;

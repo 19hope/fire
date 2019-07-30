@@ -26,14 +26,19 @@ if key_jump_released {
 	jump_time_ = jump_max_time_;
 }
 
+// Can't jump when drop
+if vspeed_ >= 0 {
+	jump_time_ = jump_max_time_;
+}
+
 // Gravity
 vspeed_ += gravity_;
 
 //show_debug_message("hspeed_=" + string(hspeed_));
 //show_debug_message("vspeed_=" + string(vspeed_));
 
-if vspeed_ == 0 && place_meeting(x + hspeed_, y, obj_wall) {
-	while !place_meeting(x + sign(hspeed_), y, obj_wall) {
+if place_meeting(x + hspeed_, y, obj_edge) {
+	while !place_meeting(x + sign(hspeed_), y, obj_edge) {
 		x += sign(hspeed_);
 	}
 	hspeed_ = 0;
@@ -46,6 +51,15 @@ if !place_meeting(x, y, obj_wall) &&
    vspeed_ > 0 && place_meeting(x, y + vspeed_, obj_wall) &&
    !(key_down && !key_jump_prev_frame_state_ && key_jump) {
 	while !place_meeting(x, y + sign(vspeed_), obj_wall) {
+		y += sign(vspeed_);
+	}
+	if !key_jump {
+	    jump_time_ = 0;
+	}
+	vspeed_ = 0;
+}
+if place_meeting(x, y + vspeed_, obj_edge) {
+	while !place_meeting(x, y + sign(vspeed_), obj_edge) {
 		y += sign(vspeed_);
 	}
 	if !key_jump {

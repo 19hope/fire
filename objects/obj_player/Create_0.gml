@@ -1,10 +1,10 @@
 hspeed_ = 0;
 max_hspeed_ = 3;
 vspeed_ = 0;
-gravity_ = 1;
-acceleration_ = 1;
+gravity_ = 0.8;
+acceleration_ = 1.5;
 friction_ = .6;
-jump_speed_ = -7.4;
+jump_speed_ = -6.2;
 jump_time_ = 0;
 jump_max_time_ = 15;
 key_jump_prev_frame_state_ = 0;

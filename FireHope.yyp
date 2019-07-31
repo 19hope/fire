@@ -34,7 +34,7 @@
             "Key": "0a140400-67cc-41a1-a282-1f6ea721abbb",
             "Value": {
                 "id": "4fa7f920-b94e-4940-8f02-62186f546014",
-                "resourcePath": "sprites\/spr_wall2\/spr_wall2.yy",
+                "resourcePath": "sprites\\spr_wall\\spr_wall.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -151,14 +151,6 @@
             }
         },
         {
-            "Key": "8829eafb-f740-4556-81f7-d6fd5472d34c",
-            "Value": {
-                "id": "ea3aff5b-1efe-4676-b300-0ad433a962fb",
-                "resourcePath": "objects\/obj_wall3\/obj_wall3.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "95c7af47-c705-40c9-96aa-7747b2fc7033",
             "Value": {
                 "id": "46e18642-5b91-4880-867e-8ada908fbc0f",
@@ -231,19 +223,19 @@
             }
         },
         {
+            "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
+            "Value": {
+                "id": "6a122491-ed05-4745-afc0-5ab7a42950b1",
+                "resourcePath": "options\\windows\\options_windows.yy",
+                "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
             "Key": "d715789a-41ca-45f2-9486-60c6cb051159",
             "Value": {
                 "id": "b8afc1a5-edf2-451d-b9cd-e57b292fbd79",
                 "resourcePath": "views\/d715789a-41ca-45f2-9486-60c6cb051159.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "dd7c6055-3989-4b95-9a31-2cd4c8f9bcf2",
-            "Value": {
-                "id": "ca6511ff-55d9-4357-8242-b5500d1ad3bc",
-                "resourcePath": "sprites\/spr_wall\/spr_wall.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

@@ -170,7 +170,7 @@
             "Key": "9d308f20-0895-4245-9a3c-44fe8f437ff5",
             "Value": {
                 "id": "7da6f00e-35a4-4bf6-a74f-8fa12a7b62ef",
-                "resourcePath": "objects\/obj_edge\/obj_edge.yy",
+                "resourcePath": "objects\/obj_wall\/obj_wall.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -226,7 +226,7 @@
             "Key": "b82b977a-2534-49ff-a64a-c5f9a148a4bd",
             "Value": {
                 "id": "9ebe8efa-219a-4a8e-99dc-ae63ee2d8cc9",
-                "resourcePath": "objects\/obj_wall\/obj_wall.yy",
+                "resourcePath": "objects\/obj_edge\/obj_edge.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -8,8 +8,6 @@ key_attack = keyboard_check_pressed(ord("A")) || gamepad_button_check_pressed(0,
 
 var move = key_right - key_left;
 
-
-
 if attack_next_frame_ <= 0 {
 	if key_attack {
 		attack_next_frame_ = attack_interval_;
@@ -28,8 +26,15 @@ if attack_next_frame_ <= 0 {
 		}
 	}
 } else {
+	// in attack mode
 	--attack_next_frame_;
 	move = 0;
+	var ids = instance_place(x, y, obj_monstersmall);
+	if ids != noone {
+		with (ids) {
+			instance_destroy();
+		}
+	}
 }
 
 if attack_next_frame_ <= 0 && move != 0 {

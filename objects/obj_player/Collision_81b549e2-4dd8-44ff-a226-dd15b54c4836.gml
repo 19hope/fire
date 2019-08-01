@@ -1,3 +1,6 @@
+if attack_next_frame_ > 0 {
+	return;
+}
 if !invincible_ {
 	if health_ > 0 {
 		health_ -= other.attack_power_;

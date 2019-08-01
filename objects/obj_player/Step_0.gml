@@ -20,10 +20,11 @@ if attack_next_frame_ <= 0 {
 			image_xscale = 1;
 		}
 	} else {
+		sprite_index = spr_player_right
 		if left_or_right_ == "LEFT" {
-			sprite_index = spr_player_left
+			image_xscale = -1;
 		} else {
-			sprite_index = spr_player_right
+			image_xscale = 1;
 		}
 	}
 } else {
@@ -36,10 +37,12 @@ if attack_next_frame_ <= 0 && move != 0 {
 		state_ = "RIGHT";
 		left_or_right_ = "RIGHT"
 		sprite_index = spr_player_right
+		image_xscale = 1;
 	} else {
 		state_ = "LEFT";
 		left_or_right_ = "LEFT"
-		sprite_index = spr_player_left
+		sprite_index = spr_player_right
+		image_xscale = -1;
 	}
 	hspeed_ += move * acceleration_;
 	hspeed_ = clamp(hspeed_, -max_hspeed_, max_hspeed_);

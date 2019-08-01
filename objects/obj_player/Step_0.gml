@@ -18,7 +18,7 @@ if move != 0 {
 if !key_down && key_jump {
 	if jump_time_ < jump_max_time_ {
 		vspeed_ = jump_speed_;
-		++jump_time_;
+		++jump_time_; 
 	}
 }
 

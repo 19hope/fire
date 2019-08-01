@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0290dbc6-5cb9-45c0-9060-ae7753819329",
+            "Value": {
+                "id": "bd168af0-7a9b-4fdb-b5c6-72f875e5137b",
+                "resourcePath": "fonts\/fnt_text\/fnt_text.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "0a140400-67cc-41a1-a282-1f6ea721abbb",
             "Value": {
                 "id": "4fa7f920-b94e-4940-8f02-62186f546014",
@@ -282,7 +290,7 @@
             "Key": "a2be1298-d9a1-4b8a-86e5-5af4251f0ca5",
             "Value": {
                 "id": "a1936e36-5811-4239-ab46-7579f3402ba2",
-                "resourcePath": "rooms\/room1\/room1.yy",
+                "resourcePath": "rooms\/rm_game\/rm_game.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -315,6 +323,14 @@
             "Value": {
                 "id": "196c25ca-d776-468c-bf63-d1cd15be7e20",
                 "resourcePath": "objects\/obj_enddoor\/obj_enddoor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ace69843-6d3b-4c47-8bc8-f37f89b13b19",
+            "Value": {
+                "id": "7539bf47-fd90-4778-a63b-2392b2d910fe",
+                "resourcePath": "objects\/obj_game\/obj_game.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -388,6 +404,14 @@
                 "id": "6a122491-ed05-4745-afc0-5ab7a42950b1",
                 "resourcePath": "options\/windows\/options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "dde8cba0-7550-4769-97a4-42f7d5497231",
+            "Value": {
+                "id": "bb27de7a-1640-49c0-a520-5ac3dfeb9f8c",
+                "resourcePath": "rooms\/rm_game_over\/rm_game_over.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

@@ -70,7 +70,7 @@ if vspeed_ > 0 {
 if place_meeting(x, y + vspeed_, obj_edge) {
 	while !place_meeting(x, y + sign(vspeed_), obj_edge) {
 		y += sign(vspeed_);
-	}
+	}       
 	if !key_jump {
 	    jump_time_ = 0;
 	} else {

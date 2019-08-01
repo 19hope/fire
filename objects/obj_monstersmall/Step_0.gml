@@ -10,8 +10,18 @@ if place_meeting(x + hspeed_, y, obj_edge) {
 	}
 	hspeed_ = -hspeed_;
 } else {
-x += hspeed_;
+	x += hspeed_;
 }
+
+if place_meeting(x + hspeed_, y, obj_transparent_wall) {
+	while !place_meeting(x + sign(hspeed_), y, obj_transparent_wall) {
+		x += sign(hspeed_);
+	}
+	hspeed_ = -hspeed_;
+} else {
+	x += hspeed_;
+}
+
 //show_debug_message("x=" + string(x));
 
 if vspeed_ > 0 {
@@ -32,5 +42,6 @@ if place_meeting(x, y + vspeed_, obj_edge) {
 	}
 	vspeed_ = 0;
 }
+
 y += vspeed_;
 //show_debug_message("y=" + string(y));

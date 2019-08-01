@@ -4,10 +4,43 @@ key_left = keyboard_check(vk_left) || gamepad_button_check(0, gp_padl);
 key_down = keyboard_check(vk_down) || gamepad_button_check(0, gp_padd);
 key_jump = keyboard_check(vk_up) || gamepad_button_check(0, gp_face1);
 key_jump_released = keyboard_check_released(vk_up) || gamepad_button_check_released(0, gp_face1);
+key_attack = keyboard_check_pressed(ord("A")) || gamepad_button_check_pressed(0, gp_face3);
 
 var move = key_right - key_left;
 
-if move != 0 {
+
+
+if attack_next_frame_ <= 0 {
+	if key_attack {
+		attack_next_frame_ = attack_interval_;
+		sprite_index = spr_player_attack
+		if left_or_right_ == "LEFT" {
+			image_xscale = -1;
+		} else {
+			image_xscale = 1;
+		}
+	} else {
+		if left_or_right_ == "LEFT" {
+			sprite_index = spr_player_left
+		} else {
+			sprite_index = spr_player_right
+		}
+	}
+} else {
+	--attack_next_frame_;
+	move = 0;
+}
+
+if attack_next_frame_ <= 0 && move != 0 {
+	if move > 0 {
+		state_ = "RIGHT";
+		left_or_right_ = "RIGHT"
+		sprite_index = spr_player_right
+	} else {
+		state_ = "LEFT";
+		left_or_right_ = "LEFT"
+		sprite_index = spr_player_left
+	}
 	hspeed_ += move * acceleration_;
 	hspeed_ = clamp(hspeed_, -max_hspeed_, max_hspeed_);
 } else {

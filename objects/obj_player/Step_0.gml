@@ -45,8 +45,8 @@ if attack_next_frame_ <= 0 {
 					if obj_game.life_ > 0 {
 						obj_game.alarm[0] = game_get_speed(gamespeed_fps) * 2;
 					} else {
-						room_goto(rm_game_over)
-					}
+						room_goto(rm_story11)
+					} 
 					instance_destroy();
 				} else {
 					invincible_ = true;

@@ -11,6 +11,7 @@ if room = rm_game {
 	draw_text(camera_x + 2, camera_y + 2, string("HP: ") + string(hp));
 
 	draw_text(camera_x + 2, camera_y + 2 + 20, string("LIFE: ") + string(life_));
+	show_debug_message(string("aaaaaaaaaa") + string(life_))
 
 	//draw_text(camera_x + 2, camera_y + 2 + 40, string("INVICILE: ") + string(invincible));
 	draw_text(camera_x + 2, camera_y + 2 + 40, string("KEYS: ") + string(key_num_));

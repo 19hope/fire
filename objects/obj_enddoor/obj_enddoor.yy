@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_enddoor",
     "eventList": [
-        
+        {
+            "id": "f93d2fad-7f3e-4c62-9f19-ab81f493bde7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "0c6fa1ed-2a3f-4854-a93d-c4f16a2fd388",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "ac5e4cb1-de3a-4fda-a17b-0a4b3163b274"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

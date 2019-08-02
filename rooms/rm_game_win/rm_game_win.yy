@@ -1,6 +1,6 @@
 
 {
-    "name": "rm_game_over",
+    "name": "rm_game_win",
     "id": "dde8cba0-7550-4769-97a4-42f7d5497231",
     "creationCodeFile": "",
     "inheritCode": false,

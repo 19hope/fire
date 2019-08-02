@@ -1,8 +1,7 @@
 
 page = 0;
 
-text[0] = "You Need to find two key.";
-text[1] = "Press any key to continue."
+text[0] = "You Need to find two key, and then go to the destination with a red flag. Press any key to continue.";
 
 xBuffer = 10;
 yBuffer = 10;
@@ -18,6 +17,7 @@ y -= boxHeight/2;
 
 charCount = 0;//截取的文本段落字符数量
 
-name = "villager";
-
+name = "Villager";
 instance_deactivate_all(true);
+
+draw_end_ = false;

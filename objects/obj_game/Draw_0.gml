@@ -11,11 +11,18 @@ if room = rm_game {
 	draw_text(camera_x + 2, camera_y + 2, string("HP: ") + string(hp));
 
 	draw_text(camera_x + 2, camera_y + 2 + 20, string("LIFE: ") + string(life_));
-	show_debug_message(string("aaaaaaaaaa") + string(life_))
 
 	//draw_text(camera_x + 2, camera_y + 2 + 40, string("INVICILE: ") + string(invincible));
 	draw_text(camera_x + 2, camera_y + 2 + 40, string("KEYS: ") + string(key_num_));
-} else if room = rm_game_over {
+} else if room = rm_game_win {
 	draw_set_font(fnt_text);
-	draw_text(0, 0, string("GAME OVER"));
+	draw_set_halign(fa_center)
+	draw_text(room_width/2, 40, string("Win!"));
+	draw_text(room_width/2, 120, string("Thank you for playing our game."));
+	draw_text(room_width/2, 200, string("Developers"));
+	draw_set_halign(fa_left)
+	draw_text(room_width/2 - 150, 240, string("Linlin Zhao"));
+	draw_text(room_width/2 + 50, 240, string("Andy Fang"));
+	draw_text(room_width/2 - 150, 280, string("Tommy Shen"));
+	draw_text(room_width/2 + 50, 280, string("Kunpeng Xu"));
 }

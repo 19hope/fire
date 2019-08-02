@@ -11,6 +11,7 @@ key_jump_prev_frame_state_ = 0;
 attack_interval_ = 20;
 attack_next_frame_ = 0;
 
+attack_power_ = 10;
 health_ = 100;
 invincible_ = true;
  

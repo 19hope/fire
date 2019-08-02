@@ -17,6 +17,14 @@ if attack_next_frame_ <= 0 {
 		} else {
 			image_xscale = 1;
 		}
+		
+		// in attack mode
+		--attack_next_frame_;
+		move = 0;
+		var ids = instance_place(x, y, obj_monstersmall);
+		if ids != noone {
+			instance_destroy(ids);
+		}
 	} else {
 		sprite_index = spr_player_right
 		if left_or_right_ == "LEFT" {
@@ -24,6 +32,29 @@ if attack_next_frame_ <= 0 {
 		} else {
 			image_xscale = 1;
 		}
+		
+		var ids = instance_place(x, y, obj_monstersmall);
+		if ids != noone {
+			if !invincible_ {
+			if health_ > 0 {
+				health_ -= ids.attack_power_;
+		
+				if health_ == 0 {
+					obj_game.player_death_x_ = x;
+					obj_game.player_death_y_ = y;
+					if obj_game.life_ > 0 {
+						obj_game.alarm[0] = game_get_speed(gamespeed_fps) * 2;
+					} else {
+						room_goto(rm_game_over)
+					}
+					instance_destroy();
+				} else {
+					invincible_ = true;
+					alarm_set(0, game_get_speed(gamespeed_fps));
+				}
+			}
+		}
+	}
 	}
 } else {
 	// in attack mode
@@ -31,9 +62,7 @@ if attack_next_frame_ <= 0 {
 	move = 0;
 	var ids = instance_place(x, y, obj_monstersmall);
 	if ids != noone {
-		with (ids) {
-			instance_destroy();
-		}
+		instance_destroy(ids);
 	}
 }
 

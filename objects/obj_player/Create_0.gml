@@ -12,7 +12,7 @@ attack_interval_ = 20;
 attack_next_frame_ = 0;
 
 attack_power_ = 10;
-health_ = 100;
+health_ = 30;
 invincible_ = true;
  
 alarm_set(0, game_get_speed(gamespeed_fps));

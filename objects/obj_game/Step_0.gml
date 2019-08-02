@@ -15,7 +15,7 @@ if room == rm_story16 {
 	return
 }
 
-if room == rm_story10 {
+if room == rm_game_help_keyboard {
 	room_goto(rm_game)
 	return
 }

@@ -1,4 +1,4 @@
-life_ = 3;
+life_ = 2;
 key_num_ = 0;
 
 player_death_x_ = 0

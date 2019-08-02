@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "50641637-19a4-45f2-9331-01f03d0f96e2",
+            "Value": {
+                "id": "8f835bef-0fa1-4144-abd6-25bd8081bbe3",
+                "resourcePath": "sprites\/sprt_help_keyboard\/sprt_help_keyboard.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5297530d-dcf2-4af5-8b88-358d26d2ae61",
             "Value": {
                 "id": "b2379d31-0edf-4e44-b3f3-f9caef1f7cdc",
@@ -295,6 +303,14 @@
             }
         },
         {
+            "Key": "5a55e56c-ff55-4f28-9cbe-9e2bcd6d7b61",
+            "Value": {
+                "id": "99d464fe-9a93-4f44-a457-f6a3a8207f21",
+                "resourcePath": "sprites\/sprt_help_gamepad\/sprt_help_gamepad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5b3a74b0-173a-402a-aa41-14af431b557b",
             "Value": {
                 "id": "20947000-344d-4406-bf18-ea353f0dec05",
@@ -324,6 +340,14 @@
                 "id": "116df71a-4d4d-4fad-8839-7989c35754bd",
                 "resourcePath": "sprites\/spr_enddoor\/spr_enddoor.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5f762ca9-bcb1-4af0-b9f1-c5299f49ed20",
+            "Value": {
+                "id": "4a5f5d38-7e5d-4d89-984f-3cf784be6bb9",
+                "resourcePath": "rooms\/rm_game_help_gamepad\/rm_game_help_gamepad.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -700,6 +724,14 @@
                 "id": "4285d8f7-2528-4903-a2e1-75197a50371b",
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f4d6c615-042d-4fe0-861d-43a0158f2050",
+            "Value": {
+                "id": "860cc5a6-e51e-4686-bca3-b2108ca64d8e",
+                "resourcePath": "rooms\/rm_game_help_keyboard\/rm_game_help_keyboard.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

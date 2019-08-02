@@ -12,7 +12,8 @@ if room = rm_game {
 
 	draw_text(camera_x + 2, camera_y + 2 + 20, string("LIFE: ") + string(life_));
 
-	draw_text(camera_x + 2, camera_y + 2 + 40, string("INVICILE: ") + string(invincible));
+	//draw_text(camera_x + 2, camera_y + 2 + 40, string("INVICILE: ") + string(invincible));
+	draw_text(camera_x + 2, camera_y + 2 + 40, string("KEYS: ") + string(key_num_));
 } else if room = rm_game_over {
 	draw_set_font(fnt_text);
 	draw_text(0, 0, string("GAME OVER"));

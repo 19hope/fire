@@ -1,4 +1,5 @@
 life_ = 3;
+key_num_ = 0;
 
 player_death_x_ = 0
 player_death_y_ = 0

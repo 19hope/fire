@@ -1,7 +1,8 @@
 
 page = 0;
 
-text[0] = "Do you want to buy something or not? if YES  Y   IF MOT  N ";
+text[0] = "You Need to find two key.";
+text[1] = "Press any key to continue."
 
 xBuffer = 10;
 yBuffer = 10;
